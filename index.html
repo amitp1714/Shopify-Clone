@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopify-clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens : {
+            sm: '500px',
+            md: '750px',
+            lg: '1115px',
+            xl: '1215px',
+          },
+          extend: {
+            colors: {
+              lightbgc: '#fbf7ed',
+              green: '#002e25',
+              buttonbgc: '#008060',
+              grey:'#d2d5d9',
+              skyblue:'#f3fcf4'
+            }
+          }
+        } 
+      }
+    </script> 
+  </head>
+  <body>
+
+    <!----------Header ------------->
+
+    <!---------- navigation bar ---------->
+
+    <header class="bg-lightbgc flex flex-col">
+      <nav class="bg-lightbgc w-full navbar flex flex-row justify-between fixed z-50 px-5 md:px-10 lg:px-15 xl:px-20">
+          <div class="left flex flex-row justify-between my-2">
+            <div class="logo w-24 lg:w-28 xl:w-32 ">
+                <img src="./assets/Shopify-Logo.png" alt="logo">
+            </div>    
+            <div class="left hidden xl:flex flex-row justify-between mt-7 ml-9">
+                <div class="">
+                  <a class="flex flex-row hover:cursor-pointer peer text-gray-600 font-medium hover:text-black text-lg mx-3">Start<img class="w-6" src="./assets/dropdown-1.svg" alt=""></a>
+                  <ul class="hidden peer-hover:flex hover:flex flex-col bg-white drop-shadow-lg z-10 border rounded   absolute font-medium w-[250px]">
+                    <li class="px-5 py-2 my-1 text-gray-700 hover:text-black hover:bg-gray-100 hover:border-l-4     hover:border-green">Start your Business</li>
+                    <span class="ml-5 w-48 border border-1 justify-center"></span>
+                    <li class="flex flex-row justify-between px-5 py-2 my-1 text-gray-700 hover:text-black hover:bg-gray-100 hover:border-l-4 hover:border-green">Branding <span>❯</span> </li>
+                    <li class="flex flex-row justify-between px-5 py-2 my-1 text-gray-700 hover:text-black hover:bg-gray-100 hover:border-l-4 hover:border-green">Online Presence <span>❯</span></li>
+                    <li class="flex flex-row justify-between px-5 py-2 my-1 text-gray-700 hover:text-black hover:bg-gray-100 hover:border-l-4 hover:border-green">Store Set up <span>❯</span></li> 
+                  </ul>
+                </div>
+                <div class="">
+                  <a class="flex flex-row hover:cursor-pointer peer text-gray-600 font-medium hover:text-black text-lg mx-3">Sell<img class="w-6" src="./assets/dropdown-1.svg" alt=""></a>
+                  <ul class="hidden peer-hover:flex hover:flex flex-col bg-white drop-shadow-lg z-10 border rounded   absolute font-medium w-[250px]">
+                    <li class="px-5 py-2 my-1 text-gray-700 hover:text-black hover:bg-gray-100 hover:border-l-4     hover:border-green">Sell everything</li>
+                    <span class="ml-5 w-48 border border-1 justify-center"></span>
+                    <li class="flex flex-row justify-between px-5 py-2 my-1 text-gray-700 hover:text-black hover:bg-gray-100 hover:border-l-4 hover:border-green">online store<span class="">❯</span> </li>
+                    <li class="flex flex-row justify-between px-5 py-2 my-1 text-gray-700 hover:text-black hover:bg-gray-100 hover:border-l-4 hover:border-green">Point of sale<span>❯</span></li>
+                    <li class="flex flex-row justify-between px-5 py-2 my-1 text-gray-700 hover:text-black hover:bg-gray-100 hover:border-l-4 hover:border-green">Buy Button<span>❯</span></li> 
+                    <li class="flex flex-row justify-between px-5 py-2 my-1 text-gray-700 hover:text-black hover:bg-gray-100 hover:border-l-4 hover:border-green">Checkout<span>❯</span></li> 
+                    <li class="flex flex-row justify-between px-5 py-2 my-1 text-gray-700 hover:text-black hover:bg-gray-100 hover:border-l-4 hover:border-green">Sales channels<span>❯</span></li> 
+                    <li class="flex flex-row justify-between px-5 py-2 my-1 text-gray-700 hover:text-black hover:bg-gray-100 hover:border-l-4 hover:border-green">Custom storefront tools<span>❯</span></li> 
+                    <li class="flex flex-row justify-between px-5 py-2 my-1 text-gray-700 hover:text-black hover:bg-gray-100 hover:border-l-4 hover:border-green">International commerce<span>❯</span></li>
+                  </ul> 
+                </div>
+                <div class="">
+                  <a class="flex flex-row hover:cursor-pointer peer text-gray-600 font-medium hover:text-black text-lg mx-3">Market<img class="w-6" src="./assets/dropdown-1.svg" alt=""></a>
+                  <ul class="hidden peer-hover:flex hover:flex flex-col bg-white drop-shadow-lg z-10 border rounded   absolute font-medium w-[250px]">
+                    <li class="px-5 py-2 my-1 text-gray-700 hover:text-black hover:bg-gray-100 hover:border-l-4     hover:border-green">Market your business</li>
+                    <span class="ml-5 w-48 border border-1 justify-center"></span>
+                    <li class="flex flex-row justify-between px-5 py-2 my-1 text-gray-700 hover:text-black hover:bg-gray-100 hover:border-l-4 hover:border-green">Email marketing</li>
+                    <li class="flex flex-row justify-between px-5 py-2 my-1 text-gray-700 hover:text-black hover:bg-gray-100 hover:border-l-4 hover:border-green">Marketing automation</li>
+                    <li class="flex flex-row justify-between px-5 py-2 my-1 text-gray-700 hover:text-black hover:bg-gray-100 hover:border-l-4 hover:border-green">Customer group</li> 
+                    <li class="flex flex-row justify-between px-5 py-2 my-1 text-gray-700 hover:text-black hover:bg-gray-100 hover:border-l-4 hover:border-green">Business chat</li> 
+                    <li class="flex flex-row justify-between px-5 py-2 my-1 text-gray-700 hover:text-black hover:bg-gray-100 hover:border-l-4 hover:border-green">Facebook Ads</li> 
+                  </ul>
+                </div>
+                <div class="">
+                  <a class="flex flex-row hover:cursor-pointer peer text-gray-700 font-medium hover:text-black text-lg mx-3">Manage<img class="w-6" src="./assets/dropdown-1.svg" alt=""></a>
+                  <ul class="hidden peer-hover:flex hover:flex flex-col bg-white drop-shadow-lg z-10 border rounded   absolute font-medium w-[250px]">
+                    <li class="px-5 py-2 my-1 text-gray-700 hover:text-black hover:bg-gray-100 hover:border-l-4     hover:border-green">Manage everything</li>
+                    <span class="ml-5 w-48 border border-1 justify-center"></span>
+                    <li class="flex flex-row justify-between px-5 py-2 my-1 text-gray-700 hover:text-black hover:bg-gray-100 hover:border-l-4 hover:border-green">Ecommerce automation</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="right hidden xl:flex flex-row justify-between mt-7">
+              <div class="text-gray-600 text-lg font-medium hover:text-black hover:cursor-pointer mx-3 mt-2">Pricing</div>
+              <div class="mt-2">
+                <a class="flex flex-row hover:cursor-pointer peer text-gray-600 font-medium hover:text-black text-lg mx-3">Learn<img class="w-6" src="./assets/dropdown-1.svg" alt=""></a>
+                <ul class="hidden peer-hover:flex hover:flex flex-col bg-white drop-shadow-lg z-10 border rounded   absolute font-medium w-[250px]">
+                  <li class="px-5 py-2 my-1 text-gray-700 hover:text-black hover:bg-gray-100 hover:border-l-4     hover:border-green">Help center</li>
+                  <span class="ml-5 w-48 border border-1 justify-center"></span>
+                  <li class="flex flex-row justify-between px-5 py-2 my-1 text-gray-700 hover:text-black hover:bg-gray-100 hover:border-l-4 hover:border-green">Blog <span>❯</span></li>
+                  <li class="flex flex-row justify-between px-5 py-2 my-1 text-gray-700 hover:text-black hover:bg-gray-100 hover:border-l-4 hover:border-green">Business Courses</li>
+                  <li class="flex flex-row justify-between px-5 py-2 my-1 text-gray-700 hover:text-black hover:bg-gray-100 hover:border-l-4 hover:border-green">Guides</li>
+                  <li class="flex flex-row justify-between px-5 py-2 my-1 text-gray-700 hover:text-black hover:bg-gray-100 hover:border-l-4 hover:border-green">Shopify Community</li>
+                  <li class="flex flex-row justify-between px-5 py-2 my-1 text-gray-700 hover:text-black hover:bg-gray-100 hover:border-l-4 hover:border-green">Free tools</li>
+                  <li class="flex flex-row justify-between px-5 py-2 my-1 text-gray-700 hover:text-black hover:bg-gray-100 hover:border-l-4 hover:border-green">Podcasts</li>
+                  <li class="flex flex-row justify-between px-5 py-2 my-1 text-gray-700 hover:text-black hover:bg-gray-100 hover:border-l-4 hover:border-green">Business encyclopedia</li>
+                  <li class="flex flex-row justify-between px-5 py-2 my-1 text-gray-700 hover:text-black hover:bg-gray-100 hover:border-l-4 hover:border-green">Community Events</li>
+                  <li class="flex flex-row justify-between px-5 py-2 my-1 text-gray-700 hover:text-black hover:bg-gray-100 hover:border-l-4 hover:border-green">Research</li>
+                </ul>
+              </div>
+              <div class="text-gray-600 text-lg font-medium hover:text-black hover:cursor-pointer px-3 mt-2">Log in</div>
+              <div class="mx-3">
+                <button class="text-lg font-medium border bg-buttonbgc text-white px-5 py-2 rounded hover:bg-green">Try for free</button>
+              </div>
+            </div>
+            <div class="small flex flex-row mt-6 xl:hidden">
+              <div class="text-gray-600 text-medium font-medium hover:text-black hover:cursor-pointer">Log in</div>
+              <div class="menu mx-3">
+                <img src="./assets/icons8-menu.svg" alt="menu">
+              </div>
+            </div>
+          </nav>
+
+          <!---------- header-content ---------->
+
+            <div class="content flex flex-col mb-16 lg:flex-row p-5 md:p-10 lg:p-15 xl:p-20">
+              <div class="left.content w-full md:w-2/3 xl:w-1/2">
+                <div class="w-full sm:w-96 xl:w-full">
+                  <h1 class="text-3xl font-bold text-green pt-5 leading-tight md:text-4xl lg:pt-20 xl:text-5xl xl:pt-24">The easiest way to sell</br>online in India</h1>
+                </div>
+                <h6 class="text-xl text-gray-500 pt-10">Try one of the most powerful platforms on the market for free. No technical knowledge needed.</h6>
+                <div class="flex flex-col my-5 sm:flex-row">
+                  <div class="w-full sm:w-3/5">
+                    <input class="w-full focus:outline-green px-5 border border-1 border-black px-4 py-2 rounded sm:mt-2 sm:w-full" type="text" placeholder="Enter your email address">
+                  </div>
+                  <div class="w-full py-2 sm:w-32">
+                    <button class="w-full font-medium border bg-buttonbgc text-white rounded hover:bg-green px-4 py-2 sm:ml-3 ">Try for free</button>
+                  </div>
+                </div>
+                <p class="text-sm text-gray-500 pb-10">Try Shopify free for 14 days, no credit card required. By entering your email, you agree to receive marketing emails from Shopify.</p>
+              </div>
+              <div class="right flex flex-row w-2/3 lg:pt-20 xl:w-5/12">
+                <video class="ml-[25%] lg:ml-10" autoplay loop muted>
+                  <source src="./assets/video-1.webm">
+                </video>
+              </div>
+            </div>     
+    </header>
+
+    <!---------- section-business---------->
+
+    <section class="business bg-green text-white p-5 md:p-10 lg:px-15 xl:px-20">
+      <div>
+        <div>
+          <h1 class="text-3xl font-normal py-5 lg:text-4xl xl:text-5xl">Bring your business online</h1>
+        <div>
+          <p class="pb-5">Create an ecommerce website backed by powerful tools that help you find customers, drive sales, and manage your day-to-day.</p>
+        </div>
+        <div class="flex flex-row hover:cursor-pointer">
+          <h6 class="font-base">Explore more examples</h6>
+          <img class="pl-1 w-6 hover:translate-x-1 origin-center hover:ease-in-out duration-200" src="./assets/icons8-right-white-arrow.png" alt="">
+        </div> 
+      </div>
+      <div class="cards flex flex-row flex-wrap justify-center w-full md:flex-nowrap pt-5 md:pt-10 lg:pt-15 xl:pt-20">
+        <div class="card pr-3 pt-10">
+          <img src="./assets/bring-business/food-and-drink.webp"  alt="">
+          <h6 class="font-medium pt-3">FOOD & DRINK</h6>
+          <p class="text-lg">Blue Tokai</p>
+        </div>
+        <div class="card pr-3 pt-10">
+          <img src="./assets/bring-business/jewelary.webp"  alt="">
+          <h6 class="font-medium pt-3">JEWELRY</h6>
+          <p class="text-lg">Quirksmith</p>
+        </div>
+        <div class="card pr-3 pt-10">
+          <img src="./assets/bring-business/electronics.webp"  alt="">
+          <h6 class="font-medium pt-3">ELECTRONICS</h6>
+          <p class="text-lg">Crossbeat</p>
+        </div>
+        <div class="card pr-3 pt-10">
+          <img src="./assets/bring-business/beauty.webp"  alt="">
+          <h6 class="font-medium pt-3">BEAUTY</h6>
+          <p class="text-lg">Mcaffeine</p>
+        </div>
+        <div class="invisible w-0 lg:visible lg:w-fit pt-10 card pr-3">
+          <img src="./assets/bring-business/fashion.webp"  alt="">
+          <h6 class="font-medium pt-3">FASHION</h6>
+          <p class="text-lg">Bunaai</p>
+        </div>
+      </div>
+      <div class="pt-10 md:pt-15 lg:pt-20 xl:pt-28">
+        <h2 class="text-2xl lg:text-3xl">Take the best path forward</h2>
+        <div class="logos flex flex-col md:flex-row justify-between flex-wrap w-full lg:flex-nowrap lg:py-15 xl:pt-20">
+          <div class="logo w-full md:w-1/2 pt-10 px-2 lg:w-fit">
+            <img src="./assets/bring-business/logo/icons8-cursor-in-window-48.png" alt="">
+            <h6 class="font-medium pt-3">Start an online business</h6>
+            <p class="pt-3">Create a business, whether you have got a fresh idea or are looking for a new way to make money.</p>
+          </div>
+          <div class="logo w-full md:w-1/2 pt-10 px-2 lg:w-fit">
+            <img src="./assets/bring-business/logo/icons8-online-shopping-48.png" alt="">
+            <h6 class="font-medium pt-3">Move your business online</h6>
+            <p class="pt-3">Turn your retail store into an online store and keep serving customers without missing a beat.</p>
+          </div>
+          <div class="logo w-full md:w-1/2 pt-10 px-2 lg:w-fit">
+            <img src="./assets/bring-business/logo/icons8-chase-50.png" alt="">
+            <h6 class="font-medium pt-3">Switch to Shopify</h6>
+            <p class="pt-3">Bring your business to Shopify, no matter which ecommerce platform you’re currently using.</p>
+          </div>
+          <div class="logo w-full md:w-1/2 pt-10 px-2 lg:w-fit">
+            <img src="./assets/bring-business/logo/icons8-people-50.png" alt="">
+            <h6 class="font-medium pt-3">Hire a Shopify expert</h6>
+            <p class="pt-3 ">Get set up with the help of a trusted freelancer or agency from the Shopify Experts Marketplace.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!---------- section platform ---------->
+
+    <section class="platform p-5 md:px-10 lg:pt-20 lg:px-16 xl:px-20">
+      <div class="text-center w-full">
+        <h1 class="text-gray-900 font-normal text-3xl md:text-4xl">With you wherever you’re going</h1>
+        <p class="text-gray-600 pt-5 text-xl md:px-[10%] xl:px-[20%]">One platform with all the ecommerce and point of sale features you need to start, run, and grow your business.</p>
+      </div>
+
+      <!----- row-one--- -->
+
+      <div class="row-one flex flex-col-reverse p-5 md:pt-10 md:px-10 lg:justify-between lg:flex-row lg:px-15 xl:px-20">
+        <div class="left ">
+          <video class="" autoplay loop muted>
+            <source src="./assets/video-2.webm">
+          </video>
+        </div>
+        <div class="right pt-14">
+          <h1 class="text-4xl text-gray-800 font-normal pt-5">Sell everywhere</h1>
+          <p class="text-lg text-gray-500 pt-5">Use one platform to sell products to anyone, anywhere-in person with Point of Sale and online through your website, social media, and online marketplaces.</p>
+          <div class="flex flex row pt-5">
+            <h6 class="text-xl font-semibold text-green">Explore ways to sell</h6>
+            <img class="ml-1 hover:translate-x-1 origin-center hover:ease-in-out duration-200" src="./assets/icons8-right-green-arrow.png" alt="logo">
+          </div>
+        </div>
+      </div> 
+
+      <!----- row-two--- -->
+
+      <div class="row-two flex flex-col p-5 md:px-10 lg:justify-between lg:flex-row lg:px-15 xl:px-20">
+        <div class="right pt-14 ">
+          <h1 class="text-4xl text-gray-800 font-normal pt-5">Market your business</h1>
+          <p class="text-lg text-gray-500 pt-5">Take the guesswork out of marketing with built-in tools that help you create, execute, and analyze digital marketing campaigns.</p>
+          <div class="flex flex row pt-5">
+            <h6 class="text-xl font-semibold text-green">Explore how to market your business</h6>
+            <img class="ml-1 hover:translate-x-1 origin-center hover:ease-in-out duration-200" src="./assets/icons8-right-green-arrow.png" alt="logo">
+          </div>
+        </div>
+        <div class="left pt-5">
+          <img src="./assets/market-your-business.webp" alt="img">
+        </div>
+      </div> 
+
+      <!----- row-three--- -->
+
+      <div class="row-three flex flex-col-reverse mb-16 p-5 md:px-10 lg:justify-between lg:flex-row lg:px-15 xl:px-20">
+        <div class="left pt-5">
+          <img src="./assets/manage-everythings.jpg" alt="img">
+        </div>
+        <div class="right pt-14 ">
+          <h1 class="text-4xl text-gray-800 font-normal pt-5">Manage everything</h1>
+          <p class="text-lg text-gray-500 pt-5">Gain the insights you need to grow—use a single dashboard to manage orders, shipping, and payments anywhere you go.</p>
+          <div class="flex flex row pt-5">
+            <h6 class="text-xl font-semibold text-green">Explore how to manage your business</h6>
+            <img class="ml-1 hover:translate-x-1 origin-center hover:ease-in-out duration-200" src="./assets/icons8-right-green-arrow.png" alt="logo">
+          </div>
+        </div>
+      </div> 
+    </section>
+
+    <!---------- section explore ---------->
+
+    <section class="explore bg-skyblue p-5 md:px-10 lg:p-16 xl:px-20">
+      <div class="pb-10">
+        <h1 class="text-4xl text-green">Explore more from Shopify in India</h1>
+      </div>
+      <div class="flex flex-col-reverse md:flex-row">
+        <div class="left bg-white p-8 w-full">
+          <h6 class="text-md font-semibold">START</h6>
+          <h1 class="text-2xl mt-5">Launch your store with the help of a Shopify Expert</h1>
+          <p class="mt-4 text-gray-800 text-md">Find hundreds of experts from India ready to help you get your store up and running, from choosing a theme to building a fully customized site.</p>
+          <div class="flex flex-wor mt-4">
+            <h5 class="font-semibold text-green text-lg">Browse Experts in India.</h5>
+            <img class="ml-1 hover:translate-x-1 origin-center hover:ease-in-out duration-200" src="./assets/icons8-right-green-arrow.png" alt="logo">
+          </div>
+        </div>
+        <div class="right w-full">
+          <img class="inline w-auto h-full"src="./assets/explore.webp" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!---------- section empowering ---------->
+
+    <section class="empowering p-5 md:px-10 lg:p-16 xl:px-20">
+      <h1 class="text-2xl text-gray-800 font-normal md:text-4xl md:w-2/3">Empowering independent business owners everywhere</h1>
+      <h2 class="text-xl  text-gray-800 font-normal md:text-2xl pt-5 md:w-2/3">Millions of businesses in <span class="font-semibold">175 countries</span> around the world have made over <span class="font-semibold">$496 billion USD</span> in sales using Shopify.</h2>
+      <div class="flex flex-row pt-5">
+        <h5 class="text-lg text-green font-semibold">Learn more about Shopify</h5>
+        <img class="ml-1 hover:translate-x-1 origin-center hover:ease-in-out duration-200" src="./assets/icons8-right-green-arrow.png" alt="logo">
+      </div>  
+      <div class="w-1/3 ml-[30%] pt-10">
+        <img src="./assets/globe1.JPG" class="w-full" alt="gif">
+      </div>
+
+      <div class="flex flex-col md:flex-row py-20 px-5">
+        <div class="right w-full h-auto">
+          <img class="inline w-auto h-full" src="./assets/alicia-souza.jpg" alt="">
+        </div>
+        <div class="left bg-green text-white w-full flex flex-col">
+          <h1 class="text-xl font-semibold mt-5 text-center px-5 md:px-10 md:text-2xl lg:px-24 pt-6 leading-relaxed">“Shopify was my knight in shining armor when I exhausted every other possibility of getting my online store up and running. It was stunningly easy to use, with more features and plug-ins that I didn’t even know I wanted.”</h1>
+          <img src="./assets/logo-alicia-souza-logo.png" class="w-20 ml-[40%] pt-5" alt="logo">
+          <h5 class="font-semibold text-white text-lg text-center py-5"> Alicia<span> | </span> Alicia Souza</h5>
+        </div>
+      </div>
+      <div class="brands flex flex-row flex-wrap justify-center lg:justify-between">
+        <div><img src="./assets/brands/yoga-bar.webp" class="p-5" alt="logo"></div>
+        <div><img src="./assets/brands/bajaao.png" class="p-5"alt="logo"></div>
+        <div><img src="./assets/brands/john-jacobs.png" class="p-5" alt="logo"></div>
+        <div><img src="./assets/brands/kylie.png" class="p-5" alt=""></div>
+        <div><img src="./assets/brands/m-caffeine.png" class="p-5" alt="logo"></div>
+        <div><img src="./assets/brands/star-struk.png" class="p-5" alt="logo"></div>
+        <div><img src="./assets/brands/nush.webp" class="p-5" alt="logo"></div>
+      </div>
+
+    </section>
+
+    <!---------- section help ---------->
+
+    <section class="help flex flex-col justify-center md:flex-row">
+        <div class="left w-full bg-lightbgc p-5 md:p-10 lg:p-16 xl:p-20">
+          <h1 class="text-3xl ">Get the help you need, every step of the way</h1>
+          <div class="flex flex-col sm:flex-row flex-wrap pt-6 ">
+            <div class="p-3 sm:w-1/2">
+              <h2 class="text-lg font-medium">Shopify support</h2>
+              <p class="text-gray-500 pt-3">Contact support 24/7, whether you’re troubleshooting issues or looking for business advice.</p>
+              <div class="flex flex-row pt-3">
+                <h2 class="font-medium text-green">Contact support</h2>
+                <img class="ml-1 w-8 h-8 hover:translate-x-1 origin-center hover:ease-in-out duration-200" src="./assets/icons8-right-green-arrow.png" alt="logo">
+              </div>
+            </div>
+            <div class="p-3 sm:w-1/2">
+              <h2 class="text-lg font-medium">Shopify App Store</h2>
+              <p class="text-gray-500 pt-3">Add features and functionality to your business with 6,000+ apps that integrate directly with Shopify.</p>
+              <div class="flex flex-row pt-3">
+                <h2 class="font-medium text-green">Visit the Shopify App Store</h2>
+                <img class="ml-1 w-8 h-8 hover:translate-x-1 origin-center hover:ease-in-out duration-200" src="./assets/icons8-right-green-arrow.png" alt="logo">
+              </div>
+            </div>
+            <div class="p-3 sm:w-2/3">
+              <h2 class="text-lg font-medium pt-3">Shopify Experts Marketplace</h2>
+              <p class="text-gray-500 pt-3">Hire a Shopify expert to help you with everything from store setup to SEO.</p>
+              <div class="flex flex-row pt-3">
+                <h2 class="font-medium text-green">Explore the Shopify Experts Marketplace</h2>
+                <img class="ml-1 w-8 h-8 hover:translate-x-1 origin-center hover:ease-in-out duration-200" src="./assets/icons8-right-green-arrow.png" alt="logo">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right w-full">
+          <img src="./assets/help@desktop.webp" class="h-full" alt="img">
+        </div>
+    </section>
+
+    <!---------- section journery ---------->
+
+    <section class="journey py-10 px-5">
+      <div class="journey flex flex-col text-center py-10">
+        <h1 class="text-3xl md:text-4xl ">Start your business journey with Shopify</h1>
+        <p class="text-xl text-gray-600 pt-5 md:px-36 lg:px-48">Try Shopify for free, and explore all the tools and services you need to start, run, and grow your business.</p>
+        <div>
+          <button class="mt-8 text-lg font-medium border bg-buttonbgc text-white px-6 py-3 rounded hover:bg-green">Start free trial</button>
+        </div>
+      </div>
+      <div class="flex flex-row justify-end px-20">
+        <a href="#top" class="text-green font-semibold text-lg pt-3">Back to top</a>
+        <a href="#top" ><img class="hover:-translate-y-2 origin-center hover:ease-in-out duration-200" src="./assets/icons8-up-50.png" alt="logo"></a>
+      </div>
+    </section>
+
+    <!--------- section footer ---------->
+
+    <footer class="bg-green text-white text-sm">
+        <div class="nav pb-5 text-lg font-semibold p-5 flex flex-row flex-wrap justify-center md:justify-start md:px-10 lg:px-20">
+          <a href="#" class="mr-3 hover:border-b-2 py-5">About</a>
+          <a href="#" class="mx-3 hover:border-b-2 py-5">Careers</a>
+          <a href="#" class="mx-3 hover:border-b-2 py-5">Press and Media</a>
+          <a href="#" class="mx-3 hover:border-b-2 py-5">Shopify Plus</a>
+          <a href="#" class="mx-3 hover:border-b-2 py-5">Sitemap</a>
+        </div>
+        <div class="border-b border-gray-500  mx-5 md:mx-10 lg:mx-20"></div>
+        <div class="flex flex-row justify-evenly md:justify-between text-gray-300 p-5 md:px-10 lg:px-20">
+          <div class="left flex flex-col py-5 md:flex-row">
+            <div class="list-none pr-5">
+              <li class="font-semibold text-white">ONLINE STORE</li>
+              <li class="pt-2"><a href="#">Sell online</a></li>
+              <li class="pt-2"><a href="#">Features</a></li>
+              <li class="pt-2"><a href="#">Examples</a></li>
+              <li class="pt-2"><a href="#">Website builder</a></li>
+              <li class="pt-2"><a href="#">Online retail</a></li>
+            </div>
+            <div class="list-none pr-5 md:pt-6">
+              <li class="pt-2"><a href="#">Ecommerce website</a></li>
+              <li class="pt-2"><a href="#">Domain names</a></li>
+              <li class="pt-2"><a href="#">Themes</a></li>
+              <li class="pt-2"><a href="#">Shopping cart</a></li>
+              <li class="pt-2"><a href="#">Ecommerce hosting</a></li>
+            </div>
+            <div class="list-none pr-5 md:pt-6">
+              <li class="pt-2"><a href="#">Mobile commerce</a></li>
+              <li class="pt-2"><a href="#">Ecommerce software</a></li>
+              <li class="pt-2"><a href="#">Online store builder</a></li>
+              <li class="pt-2"><a href="#">Dropshipping Business</a></li>
+              <li class="pt-2"><a href="#">Store themes</a></li>
+            </div>
+          </div>
+          <div class="right flex flex-col py-5 md:flex-row">
+            <div class="list-none pr-5">
+              <li class="font-semibold text-white">POINT OF SALE</li>
+              <li class="pt-2"><a href="">Point of sale</a></li>
+              <li class="pt-2"><a href="">Features</a></li>
+            </div>
+            <div class="list-none pr-5 pt-6 md:pt-0">
+              <li class="font-semibold text-white">SUPPORT</li>
+              <li class="pt-2"><a href="">24/7 support</a></li>
+              <li class="pt-2"><a href="">Shopify Help Center</a></li>
+              <li class="pt-2"><a href="">Shopify Community</a></li>
+              <li class="pt-2"><a href="">API documentation</a></li>
+              <li class="pt-2"><a href="">Free tools</a></li>
+              <li class="pt-2"><a href="">Free stock photos</a></li>
+              <li class="pt-2"><a href="">Websites for sale</a></li>
+              <li class="pt-2"><a href="">Logo Maker</a></li>
+              <li class="pt-2"><a href="">Business name generator</a></li>
+              <li class="pt-2"><a href="">Research</a></li>
+              <li class="pt-2"><a href="">Legal</a></li>
+            </div>
+            <div class="list-none pr-5 pt-6 md:pt-0">
+              <li class="font-semibold text-white">SHOPIFY</li>
+              <li class="pt-2"><a href="">Contact</a></li>
+              <li class="pt-2"><a href="">Partner program</a></li>
+              <li class="pt-2"><a href="">Affiliate program</a></li>
+              <li class="pt-2"><a href="">App developers</a></li>
+              <li class="pt-2"><a href="">Investors</a></li>
+              <li class="pt-2"><a href="">Blog topics</a></li>
+              <li class="pt-2"><a href="">Community Events</a></li>
+            </div>
+          </div>
+        </div>
+      <div class="divider border-b border-gray-500"></div>
+      <div class="foot p-5 flex flex-col justify-center md:flex-row md:p-10 md:justify-between">
+        <div class="social-media flex flex-row justify-center">
+          <img class="pr-3" src="./assets/social-media-logo/icons8-facebook.svg" alt="">
+          <img class="pr-3" src="./assets/social-media-logo/icons8-twitter-circled.svg" alt="">
+          <img class="pr-3" src="./assets/social-media-logo/icons8-youtube.svg" alt="">
+          <img class="pr-3" src="./assets/social-media-logo/icons8-instagram.svg" alt="">
+          <img class="pr-3" src="./assets/social-media-logo/icons8-linkedin.svg" alt="">
+          <img class="pr-3" src="./assets/social-media-logo/icons8-pinterest.svg" alt="">
+        </div>
+        <div class="terms flex flex-row text-white list-none justify-center pt-5 md:pt-0">
+          <li class="px-3"><a href="">Terms of Services</a></li>
+          <li class="px-3"><a href="">Privacy Policy</a></li>
+          <li class="flex flex-row">
+            <a href=""><img class="mt-1 w-4 h-4" src="./assets/social-media-logo/icons8-globe-24.png" alt="logo"></a>
+            <a class="mx-2" href="">India</a>
+            <a href="#"><img src="./assets/social-media-logo/icons8-down-24.png" alt="logo" class="mt-1.5 w-3 h-2.5"></a>
+          </li>
+        </div>
+      </div>
+    </footer> 
+</body>
+</html>
